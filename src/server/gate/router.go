@@ -1,9 +1,9 @@
 package gate
 
 import (
-	"server/protocol"
-	"server/game"
-	"server/login"
+	"texas-holdem/server/game"
+	"texas-holdem/server/login"
+	"texas-holdem/server/protocol"
 )
 
 func init() {

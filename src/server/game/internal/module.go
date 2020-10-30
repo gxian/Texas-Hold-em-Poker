@@ -1,13 +1,14 @@
 package internal
 
 import (
-	"github.com/dolotech/leaf/module"
-	"server/base"
-	"github.com/golang/glog"
-	"server/protocol"
-	"github.com/dolotech/leaf/room"
 	"reflect"
-	"server/model"
+	"texas-holdem/server/base"
+	"texas-holdem/server/model"
+	"texas-holdem/server/protocol"
+
+	"github.com/dolotech/leaf/module"
+	"github.com/dolotech/leaf/room"
+	"github.com/golang/glog"
 )
 
 var (

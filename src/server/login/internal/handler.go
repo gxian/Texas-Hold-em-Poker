@@ -2,12 +2,13 @@ package internal
 
 import (
 	"reflect"
-	"server/protocol"
+	"texas-holdem/server/game"
+	"texas-holdem/server/model"
+	"texas-holdem/server/protocol"
+
 	"github.com/dolotech/leaf/gate"
-	"server/game"
-	"github.com/golang/glog"
-	"server/model"
 	"github.com/dolotech/leaf/room"
+	"github.com/golang/glog"
 )
 
 func init() {

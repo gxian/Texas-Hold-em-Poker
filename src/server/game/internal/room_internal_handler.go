@@ -1,11 +1,12 @@
 package internal
 
 import (
-	"server/protocol"
-	"github.com/golang/glog"
-	"github.com/davecgh/go-spew/spew"
+	"texas-holdem/server/protocol"
 	"time"
+
+	"github.com/davecgh/go-spew/spew"
 	"github.com/dolotech/lib/utils"
+	"github.com/golang/glog"
 )
 
 func (r *Room) joinRoom(m *protocol.JoinRoom, o *Occupant) {
@@ -69,10 +70,9 @@ func (r *Room) joinRoom(m *protocol.JoinRoom, o *Occupant) {
 
 	o.WriteMsg(&protocol.JoinRoomResp{UserInfos: userinfos, RoomInfo: rinfo})
 
-
 	time.AfterFunc(time.Second*2, func() {
 		defer utils.PrintPanicStack()
-		r.Send(o,&startDelay{})
+		r.Send(o, &startDelay{})
 	})
 	r.Debug("joinRoom", spew.Sdump(m))
 }

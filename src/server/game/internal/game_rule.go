@@ -1,12 +1,13 @@
 package internal
 
 import (
-	"github.com/golang/glog"
-	"server/protocol"
-	"server/model"
-	"server/algorithm"
+	"texas-holdem/server/algorithm"
+	"texas-holdem/server/model"
+	"texas-holdem/server/protocol"
 	"time"
+
 	"github.com/dolotech/lib/utils"
+	"github.com/golang/glog"
 )
 
 func (r *Room) startDelay(startDelay *startDelay, o *Occupant) {
@@ -43,7 +44,7 @@ func (r *Room) start() {
 			return true
 		}
 		o.SetGameing()
-		n ++
+		n++
 		return true
 	})
 

@@ -1,10 +1,10 @@
 package game
 
 import (
-	"server/game/internal"
+	"texas-holdem/server/game/internal"
 )
 
 var (
-	Module  = new(internal.Module)//建立模块新的
+	Module  = new(internal.Module) //建立模块新的
 	ChanRPC = internal.ChanRPC
 )

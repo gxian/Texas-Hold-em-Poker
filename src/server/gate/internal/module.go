@@ -1,10 +1,11 @@
 package internal
 
 import (
+	"texas-holdem/server/conf"
+	"texas-holdem/server/game"
+	"texas-holdem/server/protocol"
+
 	"github.com/dolotech/leaf/gate"
-	"server/conf"
-	"server/game"
-	"server/protocol"
 	"github.com/golang/glog"
 )
 
@@ -31,5 +32,3 @@ func (m *Module) OnInit() {
 func (gate *Module) OnDestroy() {
 	glog.Errorln("OnDestroy")
 }
-
-

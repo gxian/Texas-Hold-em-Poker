@@ -1,9 +1,10 @@
 package base
 
 import (
+	"texas-holdem/server/conf"
+
 	"github.com/dolotech/leaf/chanrpc"
 	"github.com/dolotech/leaf/module"
-	"server/conf"
 )
 
 func NewSkeleton() *module.Skeleton {

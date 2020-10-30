@@ -1,8 +1,9 @@
 package internal
 
 import (
+	"texas-holdem/server/base"
+
 	"github.com/dolotech/leaf/module"
-	"server/base"
 )
 
 var (

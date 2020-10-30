@@ -1,10 +1,11 @@
 package internal
 
 import (
+	"texas-holdem/server/model"
+
 	"github.com/dolotech/leaf/gate"
-	"github.com/golang/glog"
-	"server/model"
 	"github.com/dolotech/leaf/room"
+	"github.com/golang/glog"
 )
 
 func init() {

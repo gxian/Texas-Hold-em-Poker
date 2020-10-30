@@ -1,11 +1,12 @@
 package room
 
 import (
-	"sync"
-	"time"
-	"strconv"
 	"math/rand"
-	"server/protocol"
+	"strconv"
+	"sync"
+	"texas-holdem/server/protocol"
+	"time"
+
 	"github.com/dolotech/leaf/gate"
 )
 
@@ -102,7 +103,7 @@ func GetRooms() []IRoom {
 	var n = 0
 	for _, v := range rooms.M {
 		r[n] = v
-		n ++
+		n++
 	}
 
 	rooms.RUnlock()

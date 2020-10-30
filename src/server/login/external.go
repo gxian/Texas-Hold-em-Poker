@@ -1,7 +1,7 @@
 package login
 
 import (
-	"server/login/internal"
+	"texas-holdem/server/login/internal"
 )
 
 var (

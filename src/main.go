@@ -1,16 +1,17 @@
 package main
 
 import (
-	"github.com/dolotech/leaf"
-	"server/conf"
-	"server/gate"
-	"server/login"
-	"net/http"
 	"flag"
-	"github.com/golang/glog"
+	"net/http"
+	"texas-holdem/server/conf"
+	"texas-holdem/server/game"
+	"texas-holdem/server/gate"
+	"texas-holdem/server/login"
+	"texas-holdem/server/model"
+
+	"github.com/dolotech/leaf"
 	"github.com/dolotech/lib/db"
-	"server/model"
-	"server/game"
+	"github.com/golang/glog"
 )
 
 var Commit = ""

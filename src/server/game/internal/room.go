@@ -1,17 +1,18 @@
 package internal
 
 import (
-	"server/model"
-	"server/protocol"
-	"server/algorithm"
+	"texas-holdem/server/algorithm"
+	"texas-holdem/server/model"
+	"texas-holdem/server/protocol"
 	"time"
+
 	"github.com/dolotech/leaf/room"
 	"github.com/golang/glog"
 )
 
 const (
-	RUNNING  uint8= 1
-	GAMEOVER uint8= 0
+	RUNNING  uint8 = 1
+	GAMEOVER uint8 = 0
 )
 
 type Room struct {
@@ -46,7 +47,7 @@ func NewRoom(max uint8, sb, bb uint32, chips uint32, timeout uint8) *Room {
 	}
 
 	r := &Room{
-		Room:      &model.Room{DraginChips: chips,},
+		Room:      &model.Room{DraginChips: chips},
 		MsgLoop:   room.NewMsgLoop(),
 		Chips:     make([]uint32, max),
 		Occupants: make([]*Occupant, max),
@@ -206,7 +207,7 @@ func (r *Room) Len() uint8 {
 	var num uint8
 	for _, v := range r.Occupants {
 		if v != nil {
-			num ++
+			num++
 		}
 	}
 	return num

@@ -1,7 +1,7 @@
 package gate
 
 import (
-	"server/gate/internal"
+	"texas-holdem/server/gate/internal"
 )
 
 var (
